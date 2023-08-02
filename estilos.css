@@ -307,5 +307,19 @@ color:var(--negro);
 
 
 @media screen and (max-width: 400px) {
-
+  #inicio{
+        width: 900px;
+    }
+    #proyectos{
+    width: 1000px;
+    /* height: auto; */
+}
+.product-card{
+width: 100%;
+/* height: 800px; */
+}
+#contacto{
+    width: 1000px;
+    height: auto;
+}
 }
