@@ -195,6 +195,10 @@ h4{
     align-items: center;
     flex-wrap: wrap;
 }
+.contenedor>a{
+    margin: 1%;
+    margin-bottom: 80px;
+}
 .product-card{
     width: 340px;
     height: 400px;
@@ -202,10 +206,10 @@ h4{
     display: block;
     overflow: hidden;
     border-radius: 2%;
-    box-shadow: 6px 6px 6px var(--negro);     position: relative;
+    box-shadow: 6px 6px 6px var(--negro);    
+    position: relative;
     transition-duration: 0.6s;
-    margin: 1%;
-    margin-bottom:10%;B
+    
     }
 .product-img{
     width: 100%;
