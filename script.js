@@ -20,10 +20,10 @@ header.addEventListener("click", function(){
 
 w.addEventListener("scroll",e=>{
     let scrolltop = w.pageYOffset;
-    if(scrolltop>250 & scrolltop<900){sobreMi.classList.add("fadein");}
+    if(scrolltop>250 & scrolltop<1200){sobreMi.classList.add("fadein");}
     else{sobreMi.classList.remove("fadein");}
 
-    if(scrolltop>950 & scrolltop<1300){proyectos.classList.add("fadein");}
+    if(scrolltop>950 & scrolltop<1700){proyectos.classList.add("fadein");}
     else{proyectos.classList.remove("fadein");}
 
 
