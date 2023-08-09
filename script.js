@@ -5,18 +5,14 @@ const proyectos = d.querySelector(".proyect");
 const menu = d.querySelector(".menu");
 const header = d.querySelector(".header");
 
-
-
-
-menu.addEventListener("click", function(){
-    menu.style.display="none"
-    header.classList.add("visible");
-})
-header.addEventListener("click", function(){
-    header.classList.remove("visible");
-    menu.style.display = "flex";
-
-})
+menu.addEventListener("click", function () {
+  menu.style.display = "none";
+  header.classList.add("visible");
+});
+header.addEventListener("click", function () {
+  header.classList.remove("visible");
+  menu.style.display = "flex";
+});
 
 // w.addEventListener("scroll",e=>{
 //     let scrolltop = w.pageYOffset;
@@ -26,26 +22,26 @@ header.addEventListener("click", function(){
 //     if(scrolltop>950 & scrolltop<1700){proyectos.classList.add("fadein");}
 //     else{proyectos.classList.remove("fadein");}
 
-
 // });
 
-const btn = document.getElementById('button');
+const btn = document.getElementById("button");
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-   btn.value = 'Enviando...';
+  btn.value = "Enviando...";
 
-   const serviceID = 'default_service';
-   const templateID = 'template_igqllcm';
+  const serviceID = "default_service";
+  const templateID = "template_igqllcm";
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'enviando';
-      alert('Enviado exitosamente');
-    }, (err) => {
-      btn.value = 'enviando';
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "enviando";
+      alert("Enviado exitosamente");
+    },
+    (err) => {
+      btn.value = "enviando";
       alert(JSON.stringify(err));
-    });
+    }
+  );
 });
