@@ -269,7 +269,7 @@ margin-bottom: 5px;
     font-size: 30px;
 
 }
-#contacto .contenedor-form {
+/* #contacto .contenedor-form {
 max-width: 1000px;
 padding-top:10px;
 margin: auto;
@@ -309,7 +309,7 @@ background-color: var(--rojo);
 #contacto .btn-enviar:hover {
 background-color: var(--blanco);
 color:var(--negro);
-}
+} */
 .product-card:hover> .product-info{
     background-color: rgba(37, 37, 37, 0.8);
     top:0;
@@ -359,3 +359,40 @@ display: block;
 
 
 }
+
+#form{
+    margin-top: 10px;
+    /* background-color: red; */
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 18px;
+    color:var(--rojo);
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+  }

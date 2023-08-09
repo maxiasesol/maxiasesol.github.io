@@ -8,6 +8,15 @@
     <meta name="description"
      content="Landig page creada por Asesol Maximiliano. En el año 2023, destinada a la creacion de paginas web">
     <link rel="stylesheet" href="estilos.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('TzHWHfV-hcis8nk2-')
+
+  </script>
+
     <title>Maximiliano Asesol</title>
 </head>
 <body>
@@ -126,6 +135,32 @@
 
     <h3 class="titulo">contact</h3>
 
+    <form id="form">
+        <!-- <div class="field">
+          <label for="from_name">from_name</label>
+          <input type="text" name="from_name" id="from_name">
+        </div> -->
+        <div class="field">
+          <label for="to_name">su nombre</label>
+          <input type="text" name="to_name" id="to_name">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message">
+        </div>
+        <div class="field">
+          <label for="reply_to">su correo</label>
+      
+      <input type="text" name="reply_to" id="reply_to">
+        </div>
+      
+        <input type="submit" id="button" value="Send Email" >
+      </form>
+      
+
+
+
+<!-- 
     <div class="contenedor-form">
             <form action="">
                 <div class="fila mitad">
@@ -142,7 +177,7 @@
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
         </div>
-    
+     -->
 </section>
 <div>
     <svg class="menu" viewBox="0 0 24 24" version="1.1" fill="#000000">
@@ -158,6 +193,7 @@
 
     </svg>
 </div>
+
 <script src="script.js"></script>
 
 </body>
