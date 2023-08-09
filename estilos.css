@@ -379,13 +379,18 @@ display: block;
   
   .field label {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     color:var(--rojo);
-    padding: 10px;
+    font-style: none;
+    list-style: none;
+    /* background-color: red; */
+    text-align: start;
+    margin-bottom: 10px;
   }
   
   .field input {
-    width: 300px;
+    padding: 5px;
+    width: 400px;
     height: 60%;
     display: block;
     min-width: 250px;
@@ -400,8 +405,10 @@ display: block;
     display: block;
     padding: 10px 35px;
     font-size: 18px;
-    background-color: #4460AA;
+    background-color: var(--rojo);
     color: var(--blanco);
     border: none;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--blanco);    
+
   }
