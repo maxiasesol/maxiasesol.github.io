@@ -361,38 +361,47 @@ display: block;
 }
 
 #form{
-    margin-top: 10px;
-    /* background-color: red; */
-    width: 80%;
+    margin-top: 5px;
+    width: 60%;
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    /* background-color: red; */
 }
 .field {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    /* background-color: #4460AA; */
+
   }
   
   .field label {
     display: block;
     font-size: 18px;
     color:var(--rojo);
+    padding: 10px;
   }
   
   .field input {
+    width: 300px;
+    height: 60%;
     display: block;
     min-width: 250px;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 18px;
+    border-radius: 4px;
+    border-color: var(--rojo);
   }
   
   input[type="submit"] {
+    margin-top: 10px;
     display: block;
-    padding: 6px 30px;
-    font-size: 14px;
+    padding: 10px 35px;
+    font-size: 18px;
     background-color: #4460AA;
-    color: #fff;
-    border: none
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
   }
