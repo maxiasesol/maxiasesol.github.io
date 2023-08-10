@@ -339,23 +339,21 @@ color:var(--negro);
   .menu:hover {
     fill: var(--negro);
   }
-
-
-
 }
 
 #form {
-background-color: red;
-margin: auto;
-width: 100vw;
-height: 80vh;
-
+  /* background-color: red; */
+  margin-top: 30px;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 .field {
   width: 100%;
   height: 20%;
   /* background-color: aquamarine; */
-  margin-top: 2%;  
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,24 +361,35 @@ height: 80vh;
 }
 
 .field label {
-color: var(--blanco);
+  color: var(--blanco);
+  text-decoration: none;
 }
 
 .field input {
-width: 80%;
-height: 40%;
-border-radius: 4px;
-padding: 4px;
+  min-width: 300px;
+  max-width: 500px;
+  width: 80%;
+  height: 50%;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  
 }
 
 input[type="submit"] {
-  margin-top: 10px;
-  /* display: block; */
+  margin: auto;
+  display: block;
   padding: 10px 35px;
   font-size: 18px;
-  background-color: var(--rojo);
-  color: var(--blanco);
+  background-color: var(--blanco);
+  color: var(--negro);
   border: none;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px var(--blanco);
+  box-shadow: 1px 1px 4px var(--blanco);
+  transition: 0.3s;
+}
+
+#button:hover {
+  color: var(--blanco);
+  background-color: var(--rojo);
 }
