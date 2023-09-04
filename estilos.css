@@ -2,7 +2,7 @@
 :root {
   --negro: rgb(63, 63, 63);
   --blanco: rgb(232, 232, 233);
-  --rojo: rgb(255, 128, 44);
+  --rojo: rgb(255, 164, 45);
 }
 * {
   box-sizing: border-box;
@@ -373,7 +373,6 @@ color:var(--negro);
   border-radius: 4px;
   padding: 10px;
   margin-top: 10px;
-  
 }
 
 input[type="submit"] {

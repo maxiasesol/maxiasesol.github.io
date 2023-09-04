@@ -5,7 +5,6 @@ const proyectos = d.querySelector(".proyect");
 const menu = d.querySelector(".menu");
 const header = d.querySelector(".header");
 
-
 menu.addEventListener("click", function () {
   menu.style.display = "none";
   header.classList.add("visible");
