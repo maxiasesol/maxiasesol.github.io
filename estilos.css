@@ -189,8 +189,8 @@ h4 {
   margin-bottom: 80px;
 }
 .product-card {
-  width: 340px;
-  height: 400px;
+  width: 260px;
+  height: 320px;
   background-color: var(--blanco);
   display: block;
   overflow: hidden;
