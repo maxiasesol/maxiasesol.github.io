@@ -1,47 +1,23 @@
-const d = document;
-const w = window;
-const sobreMi = d.querySelector(".about");
-const proyectos = d.querySelector(".proyect");
-const menu = d.querySelector(".menu");
-const header = d.querySelector(".header");
 
-menu.addEventListener("click", function () {
-  menu.style.display = "none";
-  header.classList.add("visible");
-});
-header.addEventListener("click", function () {
-  header.classList.remove("visible");
-  menu.style.display = "flex";
-});
 
-// w.addEventListener("scroll",e=>{
-//     let scrolltop = w.pageYOffset;
-//     if(scrolltop>250 & scrolltop<1200){sobreMi.classList.add("fadein");}
-//     else{sobreMi.classList.remove("fadein");}
+// Menu reponsivo bulma
+document.addEventListener('DOMContentLoaded', () => {
 
-//     if(scrolltop>950 & scrolltop<1700){proyectos.classList.add("fadein");}
-//     else{proyectos.classList.remove("fadein");}
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
 
-// });
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
 
-const btn = document.getElementById("button");
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
 
-document.getElementById("form").addEventListener("submit", function (event) {
-  event.preventDefault();
+        });
+    });
 
-  btn.value = "Enviando...";
-
-  const serviceID = "default_service";
-  const templateID = "template_igqllcm";
-
-  emailjs.sendForm(serviceID, templateID, this).then(
-    () => {
-      btn.value = "enviando";
-      alert("Enviado exitosamente");
-    },
-    (err) => {
-      btn.value = "enviando";
-      alert(JSON.stringify(err));
-    }
-  );
 });
