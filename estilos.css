@@ -26,10 +26,21 @@ html {
 }
 
 .logos {
-    width: 3%;
-    height: 3%;
-    margin-left: 25px;
+    width: 10%;
+    margin-left: 5px;
+    padding: 1.5rem;
+
 }
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
 
 #presentacion {
     display: flex;
@@ -39,11 +50,11 @@ html {
     justify-content: center;
 }
 
-.contenedor {
+#cajita {
     position: absolute;
     top: 12%;
     left: 9%;
-
+    
 }
 
 .imagen {
@@ -65,3 +76,46 @@ html {
 
     background-attachment: fixed;
 }
+
+
+
+@media (max-width:700px) {
+
+    #cajita {
+        top: 70px;
+        left: 20px;
+    }
+
+
+    .logos {
+
+        width: 20%;
+        padding: 1rem;
+    }
+
+
+    .seccion {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloque {
+        padding: 1.5rem;
+    }
+
+
+    .btnport {
+        width: 100%;
+    }
+
+    .imagen {
+        width: 90%;
+    }
+
+.contacto{
+    height: 100vh;
+
+}
+
+    }
